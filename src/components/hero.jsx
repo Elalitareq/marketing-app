@@ -51,7 +51,7 @@ const Hero = () => {
       transition: {
         duration: 8,
         ease: "easeInOut",
-        times: [0, 0.1, 1], // Adjusted the times to match the added keyframes
+        times: [0, 0.2, 1], // Adjusted the times to match the added keyframes
       },
     },
     exit: {

@@ -19,7 +19,8 @@ const HomePage = () => {
           <About />
           <Accomplishments />
           <Contact />
-          <Footer />
+		  <Footer />
+
         </div>
       </div>
     </section>

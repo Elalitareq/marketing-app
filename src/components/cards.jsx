@@ -42,26 +42,7 @@ const Cards = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-wrap justify-center gap-2 md:gap-5 mt-5 basis-full lg:basis-2/3 xl:basis-[45%] bg-white">
-					<div className="xl:basis-[45%] basis-[45%] md:max-w-[250px] bg-white">
-						<div className=" flex justify-center items-center  grow  h-[200px] rounded-lg bg-yellow-200 mb-2 md:mb-4">
-							<CiHeadphones className="text-5xl" />
-						</div>
-						<div className=" flex justify-center items-center  grow  h-[200px] rounded-lg bg-red-200">
-							<SlBadge className="text-5xl text-red-900" />
-						</div>
-					</div>
-					<div className="mt-6 xl:basis-[45%] basis-[45%] md:max-w-[250px] bg-white">
-						<div className=" flex gap-1 flex-col  justify-center items-center  grow max-w-[300px]  h-[200px] rounded-lg bg-violet-400 mb-2 md:mb-4">
-							<div>
-								<FaUser className="text-5xl text-violet-900" />
-							</div>
-						</div>
-						<div className=" flex justify-center items-center  grow max-w-[300px]  h-[200px] rounded-lg bg-blue-500">
-							<GiTrophyCup className="text-5xl text-[#0f3053]" />
-						</div>
-					</div>
-				</div>
+			
 			</div>
 		</section>
 	);

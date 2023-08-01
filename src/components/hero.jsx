@@ -27,7 +27,16 @@ const Hero = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  const rocketBounceAnimation = {
+    y: [-125, -145, -125], // The new animation to move the rocket up and down
+    opacity: [1, 0.9, 1], // Added opacity keyframes to maintain visibility
+    transition: {
+      duration: 4, // Duration of the up and down animation
+      ease: "easeInOut",
+      times: [0, 0.5, 1], // Adjusted the times to match the added keyframes
+      repeat: Infinity, // Repeat the animation infinitely
+    },
+  };
   const rocketAnimation = {
     initial: {
       x: 180,
@@ -37,12 +46,12 @@ const Hero = () => {
       scale: 0.6,
     },
     animate: {
-      y: [-150, -300, -150], // Adjusted the final y position to land at the bottom-center
-      opacity: [1, 1, 1],
+      y: [0, -300, -130], // Additional y positions for the rocket to go up and down a little
+      opacity: [0, 1, 1], // Added an extra opacity value to keep the rocket visible at the end
       transition: {
         duration: 8,
         ease: "easeInOut",
-        times: [0, 0.2, 1],
+        times: [0, 0.1, 1], // Adjusted the times to match the added keyframes
       },
     },
     exit: {
@@ -87,8 +96,7 @@ const Hero = () => {
           style={{ originX: 0.5, originY: 0.8 }} // To rotate from the bottom-center
         >
           <motion.div
-            animate="wiggle"
-            variants={rocketAnimation}
+            animate={rocketBounceAnimation} // Chaining the new animation for continuous up and down movement
             style={{ display: "inline-block" }}
           >
             <Image src={rocket} width="200" height="220" alt="rocket" />

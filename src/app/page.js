@@ -1,12 +1,10 @@
-import Header from './header';
-import Layout from '@/components/Layout';
-import { navLinks } from './global';
+import Header from "./header";
+import HomePage from "@/components/homePage";
 
 export default function Home() {
-	return (
-		<>
-			<Header navLinks={navLinks} />
-			<Layout />
-		</>
-	);
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }
